@@ -1,0 +1,1648 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation — Ridho & Lena</title>
+    <meta name="description" content="Undangan Pernikahan Digital Ridho Al Asri & Nurlena Rasmi — 25 Juli 2026">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&family=Great+Vibes&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        ivory: {
+                            50: '#FFFBF0',
+                            100: '#FFF8E7',
+                            200: '#FFF0D0',
+                            300: '#FFE8B8',
+                            400: '#FFD88A',
+                            500: '#E8D5B7',
+                            600: '#D4C4A8',
+                            700: '#B8A88E',
+                            800: '#9A8E78',
+                            900: '#7A7060',
+                        },
+                        gold: {
+                            300: '#E8D5A0',
+                            400: '#D4B896',
+                            500: '#C4A265',
+                            600: '#B8934F',
+                            700: '#A67B3F',
+                            800: '#8B6A35',
+                        },
+                        sage: {
+                            50: '#F0F4EC',
+                            100: '#E2EBDA',
+                            200: '#C5D7B5',
+                            300: '#A8C390',
+                            400: '#8BAF6B',
+                            500: '#6E9B46',
+                            600: '#5A7F39',
+                            700: '#46632D',
+                        }
+                    },
+                    fontFamily: {
+                        'playfair': ['"Playfair Display"', 'serif'],
+                        'inter': ['Inter', 'sans-serif'],
+                        'script': ['"Great Vibes"', 'cursive'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #FFFBF0; }
+        ::-webkit-scrollbar-thumb { background: #C4A265; border-radius: 3px; }
+        html { scroll-behavior: smooth; }
+        .hero-parallax {
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+        }
+        @media (max-width: 768px) {
+            .hero-parallax { background-attachment: scroll; }
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(40px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes scaleIn {
+            from { opacity: 0; transform: scale(0.9); }
+            to { opacity: 1; transform: scale(1); }
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        @keyframes pulse-glow {
+            0%, 100% { box-shadow: 0 0 20px rgba(196, 162, 101, 0.3); }
+            50% { box-shadow: 0 0 40px rgba(196, 162, 101, 0.6); }
+        }
+        @keyframes slideInLeft {
+            from { opacity: 0; transform: translateX(-60px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        @keyframes slideInRight {
+            from { opacity: 0; transform: translateX(60px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        @keyframes float-particle {
+            0% { transform: translateY(100vh) rotate(0deg); opacity: 0; }
+            10% { opacity: 1; }
+            90% { opacity: 1; }
+            100% { transform: translateY(-10vh) rotate(720deg); opacity: 0; }
+        }
+        .animate-fade-up { animation: fadeInUp 1s ease-out forwards; }
+        .animate-fade { animation: fadeIn 1.2s ease-out forwards; }
+        .animate-scale { animation: scaleIn 0.8s ease-out forwards; }
+        .animate-float { animation: float 3s ease-in-out infinite; }
+        .animate-slide-left { animation: slideInLeft 1s ease-out forwards; }
+        .animate-slide-right { animation: slideInRight 1s ease-out forwards; }
+        .delay-100 { animation-delay: 0.1s; }
+        .delay-200 { animation-delay: 0.2s; }
+        .delay-300 { animation-delay: 0.3s; }
+        .delay-400 { animation-delay: 0.4s; }
+        .delay-500 { animation-delay: 0.5s; }
+        .delay-600 { animation-delay: 0.6s; }
+        .delay-700 { animation-delay: 0.7s; }
+        .delay-800 { animation-delay: 0.8s; }
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .reveal-left {
+            opacity: 0;
+            transform: translateX(-50px);
+            transition: all 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+        .reveal-left.active {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        .reveal-right {
+            opacity: 0;
+            transform: translateX(50px);
+            transition: all 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+        .reveal-right.active {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        .reveal-scale {
+            opacity: 0;
+            transform: scale(0.85);
+            transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+        .reveal-scale.active {
+            opacity: 1;
+            transform: scale(1);
+        }
+        .ornament-line {
+            width: 80px;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #C4A265, transparent);
+            margin: 0 auto;
+        }
+        .ornament-diamond {
+            width: 8px;
+            height: 8px;
+            background: #C4A265;
+            transform: rotate(45deg);
+            margin: 0 auto;
+        }
+        .gallery-item {
+            overflow: hidden;
+            position: relative;
+        }
+        .gallery-item img {
+            transition: transform 0.6s ease, filter 0.6s ease;
+        }
+        .gallery-item:hover img {
+            transform: scale(1.08);
+            filter: brightness(0.9);
+        }
+        .gallery-overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(0,0,0,0.2);
+            opacity: 0;
+            transition: opacity 0.4s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+        }
+        .lightbox {
+            display: none;
+            position: fixed;
+            inset: 0;
+            z-index: 100;
+            background: rgba(0,0,0,0.92);
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .lightbox.active { display: flex; }
+        .lightbox img {
+            max-width: 90vw;
+            max-height: 85vh;
+            object-fit: contain;
+            border-radius: 4px;
+        }
+        .countdown-card{
+    background:rgba(255,255,255,.55);
+    backdrop-filter:blur(10px);
+    border:1px solid rgba(255,255,255,.5);
+    box-shadow:0 8px 30px rgba(0,0,0,.08);
+}
+        .form-input {
+            transition: all 0.3s ease;
+            border: 1px solid #E8D5B7;
+        }
+        .form-input:focus {
+            border-color: #C4A265;
+            box-shadow: 0 0 0 3px rgba(196, 162, 101, 0.15);
+            outline: none;
+        }
+        .message-card {
+            transition: all 0.3s ease;
+        }
+        .message-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+        }
+        .music-btn {
+            animation: pulse-glow 2s infinite;
+        }
+        .music-btn.playing {
+            animation: none;
+        }
+        .badge-hadir { background: #E2EBDA; color: #46632D; }
+        .badge-tidak { background: #FDE8E8; color: #9B2C2C; }
+        .badge-belum { background: #FFF8E7; color: #8B6A35; }
+        .nav-link {
+            position: relative;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 50%;
+            width: 0;
+            height: 1px;
+            background: #C4A265;
+            transition: all 0.3s ease;
+            transform: translateX(-50%);
+        }
+        .nav-link:hover::after,
+        .nav-link.active::after {
+            width: 100%;
+        }
+        .video-wrapper{
+    background:rgba(255,255,255,.25);
+    backdrop-filter:blur(10px);
+    padding:15px;
+    border-radius:20px;
+    border:1px solid rgba(255,255,255,.35);
+}
+
+.video-wrapper video {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+}
+        .map-wrapper {
+            position: relative;
+            padding-bottom: 60%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 12px;
+        }
+        .map-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .copy-btn {
+            transition: all 0.2s ease;
+        }
+        .copy-btn:active {
+            transform: scale(0.95);
+        }
+        .opening-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 200;
+
+    background-image: url('https://lh3.googleusercontent.com/d/12w1zeGF4WzgbRyKu00DinfPpwe_mOfSp=w3000');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: opacity .8s ease, visibility .8s ease;
+}
+        .opening-overlay.hidden {
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+        }
+        .opening-overlay.fade-out {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+        .particle {
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(196, 162, 101, 0.15);
+            pointer-events: none;
+            animation: float-particle linear infinite;
+        }
+        .gift-card {
+            background: linear-gradient(135deg, #FFF8E7 0%, #FFFBF0 100%);
+            border: 1px solid rgba(196, 162, 101, 0.3);
+        }
+        .section-divider {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+            padding: 40px 0;
+        }
+        .section-divider .line {
+            width: 60px;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #C4A265, transparent);
+        }
+        .section-divider .dot {
+            width: 6px;
+            height: 6px;
+            background: #C4A265;
+            border-radius: 50%;
+        }
+        .timeline-line {
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 1px;
+            background: linear-gradient(to bottom, transparent, #C4A265, transparent);
+            transform: translateX(-50%);
+        }
+        @media (max-width: 768px) {
+            .timeline-line { left: 20px; }
+        }
+        .custom-select {
+            appearance: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23C4A265' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 12px center;
+            padding-right: 36px;
+        }
+        .btn-lift {
+            transition: all 0.3s ease;
+        }
+        .btn-lift:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(196, 162, 101, 0.3);
+        }
+        .btn-lift:active {
+            transform: translateY(0);
+        }
+        #hero{
+    transform:scale(1.12);
+    transition:transform 2.5s ease;
+}
+
+#hero.zoom-in{
+    transform:scale(1);
+}
+.section-bg{
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.section-bg::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(255,255,255,.82);
+}
+
+.section-bg > *{
+    position:relative;
+    z-index:2;
+}
+    </style>
+<base target="_blank">
+</head>
+<body class="bg-ivory-50 font-inter text-ivory-900 antialiased overflow-x-hidden">
+
+    <!-- Opening Overlay -->
+    <div id="openingOverlay" class="opening-overlay">
+    <div class="text-center px-6 max-w-md mt-60 md:mt-64">
+            <div class="mb-8 animate-fade">
+            </div>
+            <p class="text-white text-sm tracking-[0.3em] uppercase mb-4">The Wedding of</p>
+            <h1 class="font-playfair text-5xl md:text-6xl text-white mb-2">Ridho & Lena</h1>
+            <p class="font-script text-3xl text-[#F4D07A] mb-6">25 Juli 2026</p>
+            <p class="text-white mb-8">Kepada Yth.<br>Bapak/Ibu/Saudara/i</p>
+            <p class="font-playfair text-2xl md:text-3xl text-[#F4D07A] mb-6 animate-fade delay-600" id="guestNameDisplay">Tamu Undangan</p>
+            <button id="openBtn" class="btn-lift bg-gold-500 text-white px-10 py-3 rounded-full text-sm tracking-wider uppercase font-medium animate-fade delay-700 hover:bg-gold-600 transition-colors">
+                Buka Undangan
+            </button>
+        </div>
+    </div>
+
+    <!-- Floating Music Button -->
+    <button id="musicBtn" class="music-btn fixed bottom-6 right-6 z-50 w-12 h-12 bg-gold-500 text-white rounded-full flex items-center justify-center shadow-lg hover:bg-gold-600 transition-all" title="Putar Musik">
+        <svg id="musicIcon" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"/>
+        </svg>
+    </button>
+
+    <!-- Audio Element -->
+    <audio id="bgMusic" loop preload="auto">
+    <source src="risk-it-all.mp3" type="audio/mpeg">
+</audio>
+
+    <!-- Navigation -->
+    <nav id="mainNav" class="fixed top-0 left-0 right-0 z-40 transition-all duration-500 opacity-0 -translate-y-full">
+        <div class="bg-white/80 backdrop-blur-md border-b border-ivory-200/50">
+            <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+                <a href="#hero" class="font-playfair text-lg text-ivory-800">R & L</a>
+                <div class="hidden md:flex items-center gap-8 text-xs tracking-wider uppercase">
+                    <a href="#couple" class="nav-link text-ivory-700 hover:text-gold-600 transition-colors">Mempelai</a>
+                    <a href="#story" class="nav-link text-ivory-700 hover:text-gold-600 transition-colors">Cerita</a>
+                    <a href="#event" class="nav-link text-ivory-700 hover:text-gold-600 transition-colors">Acara</a>
+                    <a href="#gallery" class="nav-link text-ivory-700 hover:text-gold-600 transition-colors">Galeri</a>
+                    <a href="#rsvp" class="nav-link text-ivory-700 hover:text-gold-600 transition-colors">RSVP</a>
+                    <a href="#gifts" class="nav-link text-ivory-700 hover:text-gold-600 transition-colors">Hadiah</a>
+                    <a href="#wishes" class="nav-link text-ivory-700 hover:text-gold-600 transition-colors">Ucapan</a>
+                </div>
+                <button id="mobileMenuBtn" class="md:hidden text-ivory-800">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div id="mobileMenu" class="md:hidden bg-white/95 backdrop-blur-md border-b border-ivory-200 hidden">
+            <div class="px-4 py-4 space-y-3 text-sm tracking-wider uppercase">
+                <a href="#couple" class="block text-ivory-700 hover:text-gold-600 py-2">Mempelai</a>
+                <a href="#story" class="block text-ivory-700 hover:text-gold-600 py-2">Cerita</a>
+                <a href="#event" class="block text-ivory-700 hover:text-gold-600 py-2">Acara</a>
+                <a href="#gallery" class="block text-ivory-700 hover:text-gold-600 py-2">Galeri</a>
+                <a href="#rsvp" class="block text-ivory-700 hover:text-gold-600 py-2">RSVP</a>
+                <a href="#gifts" class="block text-ivory-700 hover:text-gold-600 py-2">Hadiah</a>
+                <a href="#wishes" class="block text-ivory-700 hover:text-gold-600 py-2">Ucapan</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+<section
+id="hero"
+class="relative min-h-screen flex items-center justify-center overflow-hidden">
+
+    <!-- Background -->
+    <div
+        class="absolute inset-0 hero-parallax"
+        style="
+        background-image:url('https://drive.google.com/thumbnail?id=1zeuZL-TGrrTcgkqBGXVD0Ab0gWA1QTPk&sz=w3000');
+        background-size:cover;
+        background-position:center center;
+        background-repeat:no-repeat;">
+
+        <div class="absolute inset-0 bg-black/35"></div>
+
+        <div class="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-white/20"></div>
+
+    </div>
+
+    <!-- Particles -->
+    <div id="particles" class="absolute inset-0 pointer-events-none overflow-hidden"></div>
+
+    <!-- Hero Content -->
+    <div class="relative z-10 text-center px-6 max-w-3xl mx-auto">
+
+        <div class="mb-6 animate-fade">
+            <div class="ornament-line mb-3 bg-white/50"></div>
+            <div class="ornament-diamond bg-white/60 mb-3"></div>
+            <div class="ornament-line bg-white/50"></div>
+        </div>
+
+        <p class="text-white/80 text-xs md:text-sm tracking-[0.4em] uppercase mb-6 animate-fade delay-200">
+            Undangan Pernikahan
+        </p>
+
+        <h1 class="font-playfair text-4xl md:text-6xl lg:text-8xl text-white mb-2 animate-fade-up delay-300">
+            Ridho
+            <span class="font-script text-3xl md:text-5xl lg:text-6xl text-gold-300">&</span>
+            Lena
+        </h1>
+
+        <p class="font-script text-2xl md:text-3xl text-gold-300 mb-8 animate-fade delay-500">
+            25 Juli 2026
+        </p>
+
+        <div class="flex items-center justify-center gap-4 text-white/70 text-sm animate-fade delay-600">
+            <span>Sabtu</span>
+            <span class="w-1 h-1 bg-gold-400 rounded-full"></span>
+            <span>25 Juli 2026</span>
+        </div>
+
+    </div>
+
+    <!-- Scroll Down -->
+    <a href="#couple"
+       class="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center text-white/80 hover:text-white transition-colors group animate-fade delay-700">
+
+        <span class="tracking-wider text-sm mb-2">
+            Scroll Down
+        </span>
+
+        <svg class="w-5 h-5 animate-bounce group-hover:animate-none"
+             fill="none"
+             stroke="currentColor"
+             viewBox="0 0 24 24">
+            <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
+        </svg>
+
+    </a>
+
+</section>
+
+    <!-- Couple Section -->
+    <section
+id="couple"
+class="section-bg"
+style="background-image:url('https://drive.google.com/thumbnail?id=1O28ajCAD1PLwK0ixdAZIg2FqOjpAU4fH&sz=w1600');">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-16 reveal">
+                <div class="text-center mb-6 reveal">
+    <h2 class="text-4xl md:text-5xl text-gold-500 font-arabic leading-relaxed">
+        ﷽
+    </h2>
+</div>
+                <div class="text-center max-w-3xl mx-auto mb-8 reveal">
+    <p class="text-gold-500 text-xl md:text-2xl font-medium mb-4">
+        Assalamu'alaikum Wr. Wb
+    </p>
+
+    <p class="text-ivory-800 leading-8 text-base md:text-lg">
+        Tanpa mengurangi rasa hormat,<br>
+        kami mengundang Bapak/Ibu/Saudara/i<br>
+        serta kerabat sekalian untuk menghadiri<br>
+        acara pernikahan
+    </p>
+</div>
+                <p class="text-gold-500 text-xs tracking-[0.3em] uppercase mb-3">Mempelai</p>
+                <h2 class="font-playfair text-3xl md:text-4xl text-ivory-800 mb-4">Kedua Mempelai</h2>
+                <div class="ornament-line mb-3"></div>
+                <div class="ornament-diamond mb-3"></div>
+                <div class="ornament-line"></div>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8 items-center">
+                <div class="text-center reveal-left">
+                    <div class="relative mb-6 mx-auto w-48 h-48 md:w-56 md:h-56 rounded-full overflow-hidden border-4 border-white shadow-xl">
+
+    <img
+        src="https://drive.google.com/thumbnail?id=1Tw2YVjX6mlnAMfrFKyo0s3jjjuD6GBXL&sz=w1000"
+        alt="Mempelai Pria"
+        class="absolute"
+        style="
+            width: 125%;
+            max-width: none;
+            left: -10%;
+            top: -8%;
+        ">
+
+</div>
+                    <h3 class="font-playfair text-2xl md:text-3xl text-ivory-800 mb-2">Ridho Al Asri</h3>
+                    <p class="text-gold-600 text-sm tracking-wider uppercase mb-4">Pengantin Pria</p>
+                    <div class="space-y-1 text-ivory-800 text-sm">
+                        <p>Putra dari</p>
+                        <p class="font-medium text-ivory-800">Bapak Amil Abidin</p>
+                        <p class="font-medium text-ivory-800">& Ibu Asrianti</p>
+                    </div>
+                </div>
+                <div class="flex items-center justify-center reveal-scale">
+                    <div class="text-center">
+                        <div class="font-script text-5xl text-gold-500 mb-2">&</div>
+                        <div class="w-px h-20 bg-gradient-to-b from-gold-300 to-transparent mx-auto"></div>
+                    </div>
+                </div>
+                <div class="text-center reveal-right">
+                    <div class="relative mb-6 mx-auto w-48 h-48 md:w-56 md:h-56 rounded-full overflow-hidden border-4 border-white shadow-xl">
+
+    <img
+        src="https://drive.google.com/thumbnail?id=1HXuUozfzGZ9xKbOr45ij2nHTEOejKyVn&sz=w1000"
+        alt="Mempelai Wanita"
+        class="absolute"
+        style="
+            width: 220%;
+            max-width: none;
+            left: -75%;
+            top: -85%;
+        ">
+
+</div>
+                    <h3 class="font-playfair text-2xl md:text-3xl text-ivory-800 mb-2">Nurlena Rasmi</h3>
+                    <p class="text-gold-600 text-sm tracking-wider uppercase mb-4">Pengantin Wanita</p>
+                    <div class="space-y-1 text-ivory-800 text-sm">
+                        <p>Putri dari</p>
+                        <p class="font-medium text-ivory-800">Alm. Bapak Abd. Razak</p>
+                        <p class="font-medium text-ivory-800">& Ibu Hasmira</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider reveal">
+        <div class="line"></div>
+        <div class="dot"></div>
+        <div class="line"></div>
+    </div>
+
+    <!-- Story Section -->
+    <section
+id="story"
+class="section-bg"
+style="background-image:url('https://drive.google.com/thumbnail?id=1XVkCnupl49Ie4xDDuRnllzbvZ_b-qHYO&sz=w1600');">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-16 reveal">
+                <p class="text-gold-600 text-xs tracking-[0.3em] uppercase mb-3">Perjalanan Cinta</p>
+                <h2 class="font-playfair text-3xl md:text-4xl text-ivory-800 mb-4">Cerita Kami</h2>
+                <div class="ornament-line mb-3"></div>
+                <div class="ornament-diamond mb-3"></div>
+                <div class="ornament-line"></div>
+            </div>
+            <div class="relative reveal">
+                <div class="timeline-line hidden md:block"></div>
+                <div class="md:grid md:grid-cols-2 md:gap-16">
+                    <div class="md:text-right mb-8 md:mb-0 reveal-left">
+                        <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-6 md:p-8 shadow-sm border border-ivory-200/50">
+                            <p class="text-ivory-700 leading-relaxed text-sm md:text-base">
+                                Tidak ada perjalanan yang selalu mudah, namun setiap langkah yang kami lalui bersama semakin menguatkan keyakinan kami. Dari saling mengenal, belajar memahami, hingga saling mendukung dalam suka dan duka, kami menemukan arti kebersamaan yang sesungguhnya.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="reveal-right">
+                        <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-6 md:p-8 shadow-sm border border-ivory-200/50">
+                            <p class="text-ivory-700 leading-relaxed text-sm md:text-base">
+                                Dengan restu keluarga dan doa orang-orang tercinta, kami siap memulai babak baru kehidupan bersama. Kami bersyukur atas setiap momen yang telah membawa kami ke titik ini, dan kami tidak sabar untuk menulis bab berikutnya dari kisah cinta kami.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-12 text-center reveal">
+                    <div class="inline-block bg-white/60 backdrop-blur-sm rounded-2xl px-8 py-6 border border-ivory-200/50">
+                        <svg class="w-8 h-8 text-gold-400 mx-auto mb-3" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                        </svg>
+                        <p class="font-playfair italic text-lg md:text-lg text-ivory-800 mb-2">
+                            “Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang. Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda (kebesaran Allah) bagi kaum yang berpikir.”
+                        </p>
+                        <p class="text-gold-600 text-sm">(Qs. Ar-Rum : 21)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider reveal">
+        <div class="line"></div>
+        <div class="dot"></div>
+        <div class="line"></div>
+    </div>
+
+    <!-- Video Section -->
+   <section
+id="video"
+class="section-bg py-20"
+style="background-image:url('https://drive.google.com/thumbnail?id=1P3LrIXZ9sTOsSqFO7gyrdOt1HYtwzHAy&sz=w1600');">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-12 reveal">
+                <p class="text-gold-600 text-xs tracking-[0.3em] uppercase mb-3">Momen Berharga</p>
+                <h2 class="font-playfair text-3xl md:text-4xl text-ivory-800 mb-4">Cinematic Mappettuada</h2>
+                <div class="ornament-line mb-3"></div>
+                <div class="ornament-diamond mb-3"></div>
+                <div class="ornament-line"></div>
+            </div>
+            <div class="reveal">
+              <div class="video-wrapper shadow-2xl">
+    <video
+    controls
+    playsinline
+    preload="metadata"
+    poster="https://drive.google.com/thumbnail?id=1zeuZL-TGrrTcgkqBGXVD0Ab0gWA1QTPk&sz=w1200"
+    class="w-full h-auto rounded-xl">
+        <source src="mappettuada.mp4" type="video/mp4">
+        Browser Anda tidak mendukung video HTML5.
+    </video>
+</div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider reveal">
+        <div class="line"></div>
+        <div class="dot"></div>
+        <div class="line"></div>
+    </div>
+
+    <!-- Countdown Section -->
+    <section
+id="countdown"
+class="section-bg py-20 md:py-32 px-4"
+style="background-image:url('https://drive.google.com/thumbnail?id=1570Zc5uXQNZxRQcBy_eO6B2z2xzwRZH3&sz=w1600');">
+        <div class="absolute inset-0 opacity-5">
+            <div class="absolute top-10 left-10 w-40 h-40 rounded-full border border-gold-500"></div>
+            <div class="absolute bottom-10 right-10 w-60 h-60 rounded-full border border-gold-500"></div>
+        </div>
+        <div class="max-w-4xl mx-auto relative z-10">
+            <div class="text-center mb-12 reveal">
+                <p class="text-gold-600 text-xs tracking-[0.3em] uppercase mb-3">Menghitung Hari</p>
+                <h2 class="font-playfair text-3xl md:text-4xl text-ivory-800 mb-4">Menuju Hari Bahagia</h2>
+                <div class="ornament-line mb-3"></div>
+                <div class="ornament-diamond mb-3"></div>
+                <div class="ornament-line"></div>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 reveal">
+                <div class="countdown-card rounded-2xl p-6 text-center">
+                    <div id="days" class="font-playfair text-4xl md:text-5xl text-gold-600 mb-1">00</div>
+                    <p class="text-ivory-600 text-xs tracking-wider uppercase">Hari</p>
+                </div>
+                <div class="countdown-card rounded-2xl p-6 text-center">
+                    <div id="hours" class="font-playfair text-4xl md:text-5xl text-gold-600 mb-1">00</div>
+                    <p class="text-ivory-600 text-xs tracking-wider uppercase">Jam</p>
+                </div>
+                <div class="countdown-card rounded-2xl p-6 text-center">
+                    <div id="minutes" class="font-playfair text-4xl md:text-5xl text-gold-600 mb-1">00</div>
+                    <p class="text-ivory-600 text-xs tracking-wider uppercase">Menit</p>
+                </div>
+                <div class="countdown-card rounded-2xl p-6 text-center">
+                    <div id="seconds" class="font-playfair text-4xl md:text-5xl text-gold-600 mb-1">00</div>
+                    <p class="text-ivory-600 text-xs tracking-wider uppercase">Detik</p>
+                </div>
+            </div>
+            <div class="mt-10 text-center reveal">
+                <p class="font-playfair text-xl md:text-2xl text-ivory-800">Sabtu, 25 Juli 2026</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider reveal">
+        <div class="line"></div>
+        <div class="dot"></div>
+        <div class="line"></div>
+    </div>
+
+    <!-- Event Details Section -->
+    <section
+id="event"
+class="section-bg"
+style="background-image:url('https://drive.google.com/thumbnail?id=1td-RcTpJZOtyTvEedzds5q0djr98ZO0A&sz=w1600');">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-16 reveal">
+                <p class="text-gold-600 text-xs tracking-[0.3em] uppercase mb-3">Detail Acara</p>
+                <h2 class="font-playfair text-3xl md:text-4xl text-ivory-800 mb-4">Rangkaian Acara</h2>
+                <div class="ornament-line mb-3"></div>
+                <div class="ornament-diamond mb-3"></div>
+                <div class="ornament-line"></div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8 md:gap-12">
+                <div class="reveal-left">
+                    <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-6 md:p-8 shadow-sm border border-ivory-200/50 h-full">
+                        <div class="flex items-center gap-3 mb-6">
+                            <div class="w-12 h-12 rounded-full bg-gold-100 flex items-center justify-center">
+                                <svg class="w-6 h-6 text-gold-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="text-gold-600 text-xs tracking-wider uppercase">Acara Pertama</p>
+                                <h3 class="font-playfair text-xl text-ivory-800">Akad Nikah</h3>
+                            </div>
+                        </div>
+                        <div class="space-y-4 mb-6">
+                            <div class="flex items-start gap-3">
+                                <svg class="w-5 h-5 text-gold-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                                </svg>
+                                <div>
+                                    <p class="text-ivory-800 font-medium text-sm">Sabtu, 25 Juli 2026</p>
+                                    <p class="text-ivory-600 text-sm">Pukul 09:00 WITA</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <svg class="w-5 h-5 text-gold-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                </svg>
+                                <div>
+                                    <p class="text-ivory-800 font-medium text-sm">Kel. Banyorang, Kec. Tompobulu</p>
+                                    <p class="text-ivory-600 text-sm">Kab. Bantaeng, Sulawesi Selatan</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="map-wrapper mb-4">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3973.7!2d120.0419!3d-5.4582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNcKwMjcnMjkuNSJTIDEyMMKwMDInMzEuMCJF!5e0!3m2!1sid!2sid!4v1600000000000!5m2!1sid!2sid" 
+                                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                        <a href="https://www.google.com/maps/search/?api=1&query=-5.4582,120.0419" 
+                           target="_blank" 
+                           class="btn-lift inline-flex items-center gap-2 bg-gold-500 text-white px-6 py-2.5 rounded-full text-sm font-medium hover:bg-gold-600 transition-colors w-full justify-center">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                            </svg>
+                            Buka di Google Maps
+                        </a>
+                    </div>
+                </div>
+                <div class="reveal-right">
+                    <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-6 md:p-8 shadow-sm border border-ivory-200/50 h-full">
+                        <div class="flex items-center gap-3 mb-6">
+                            <div class="w-12 h-12 rounded-full bg-gold-100 flex items-center justify-center">
+                                <svg class="w-6 h-6 text-gold-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="text-gold-600 text-xs tracking-wider uppercase">Acara Kedua</p>
+                                <h3 class="font-playfair text-xl text-ivory-800">Resepsi</h3>
+                            </div>
+                        </div>
+                        <div class="space-y-4 mb-6">
+                            <div class="flex items-start gap-3">
+                                <svg class="w-5 h-5 text-gold-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                                </svg>
+                                <div>
+                                    <p class="text-ivory-800 font-medium text-sm">Sabtu, 25 Juli 2026</p>
+                                    <p class="text-ivory-600 text-sm">Pukul 10:00 WITA</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <svg class="w-5 h-5 text-gold-500 mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                                </svg>
+                                <div>
+                                    <p class="text-ivory-800 font-medium text-sm">Kel. Banyorang, Kec. Tompobulu</p>
+                                    <p class="text-ivory-600 text-sm">Kab. Bantaeng, Sulawesi Selatan</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="map-wrapper mb-4">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3973.7!2d120.0419!3d-5.4582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNcKwMjcnMjkuNSJTIDEyMMKwMDInMzEuMCJF!5e0!3m2!1sid!2sid!4v1600000000000!5m2!1sid!2sid" 
+                                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                        <a href="https://www.google.com/maps/search/?api=1&query=-5.6708,119.7729" 
+                           target="_blank" 
+                           class="btn-lift inline-flex items-center gap-2 bg-gold-500 text-white px-6 py-2.5 rounded-full text-sm font-medium hover:bg-gold-600 transition-colors w-full justify-center">
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                            </svg>
+                            Buka di Google Maps
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider reveal">
+        <div class="line"></div>
+        <div class="dot"></div>
+        <div class="line"></div>
+    </div>
+
+    <!-- Gallery Section -->
+    <section
+id="gallery"
+class="section-bg py-20"
+style="background-image:url('https://drive.google.com/thumbnail?id=1P3LrIXZ9sTOsSqFO7gyrdOt1HYtwzHAy&sz=w1600');">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16 reveal">
+                <p class="text-gold-600 text-xs tracking-[0.3em] uppercase mb-3">Kenangan Indah</p>
+                <h2 class="font-playfair text-3xl md:text-4xl text-ivory-800 mb-4">Galeri Foto</h2>
+                <div class="ornament-line mb-3"></div>
+                <div class="ornament-diamond mb-3"></div>
+                <div class="ornament-line"></div>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4 reveal">
+                <div class="overflow-hidden rounded-3xl shadow-xl aspect-[3/4]">
+                    <img src="https://drive.google.com/thumbnail?id=1UCIDuqJRaW4NkkbWoD2A44Q2PArlChb_&sz=w1200"
+                         alt="Foto Prewedding 1" 
+                                 class="w-full h-full object-cover transition-all duration-700 hover:scale-110"
+    loading="lazy">
+                    <div class="gallery-overlay rounded-xl">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="overflow-hidden rounded-3xl shadow-xl aspect-[3/4]">
+                    <img src="https://drive.google.com/thumbnail?id=1570Zc5uXQNZxRQcBy_eO6B2z2xzwRZH3&sz=w1200"
+                         alt="Foto Prewedding 2" 
+                                 class="w-full h-full object-cover transition-all duration-700 hover:scale-110">
+                         loading="lazy">
+                    <div class="gallery-overlay rounded-xl">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="overflow-hidden rounded-3xl shadow-xl aspect-[3/4]">
+                    <img src="https://drive.google.com/thumbnail?id=1P3LrIXZ9sTOsSqFO7gyrdOt1HYtwzHAy&sz=w1200" 
+                         alt="Foto Prewedding 3" 
+                                 class="w-full h-full object-cover transition-all duration-700 hover:scale-110">
+                         loading="lazy">
+                    <div class="gallery-overlay rounded-xl">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="overflow-hidden rounded-3xl shadow-xl aspect-[3/4]">
+                    <img src="https://drive.google.com/thumbnail?id=1td-RcTpJZOtyTvEedzds5q0djr98ZO0A&sz=w1200"
+                         alt="Foto Prewedding 4" 
+                                 class="w-full h-full object-cover transition-all duration-700 hover:scale-110">
+                         loading="lazy">
+                    <div class="gallery-overlay rounded-xl">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="overflow-hidden rounded-3xl shadow-xl aspect-[3/4]">
+                    <img src="https://drive.google.com/thumbnail?id=1O28ajCAD1PLwK0ixdAZIg2FqOjpAU4fH&sz=w1200"
+                         alt="Foto Prewedding 5" 
+                                 class="w-full h-full object-cover transition-all duration-700 hover:scale-110">
+                         loading="lazy">
+                    <div class="gallery-overlay rounded-xl">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="overflow-hidden rounded-3xl shadow-xl aspect-[3/4]">
+                    <img src="https://drive.google.com/thumbnail?id=1XVkCnupl49Ie4xDDuRnllzbvZ_b-qHYO&sz=w1200"
+                         alt="Foto Prewedding 6" 
+                                 class="w-full h-full object-cover transition-all duration-700 hover:scale-110">
+                         loading="lazy">
+                    <div class="gallery-overlay rounded-xl">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox(event)">
+        <button class="absolute top-4 right-4 text-white/80 hover:text-white z-10" onclick="closeLightbox(event)">
+            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+            </svg>
+        </button>
+        <button class="absolute left-4 top-1/2 -translate-y-1/2 text-white/80 hover:text-white z-10" onclick="prevImage(event)">
+            <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+            </svg>
+        </button>
+        <button class="absolute right-4 top-1/2 -translate-y-1/2 text-white/80 hover:text-white z-10" onclick="nextImage(event)">
+            <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+            </svg>
+        </button>
+        <img id="lightboxImg" src="" alt="Gallery Preview">
+    </div>
+
+    <div class="section-divider reveal">
+        <div class="line"></div>
+        <div class="dot"></div>
+        <div class="line"></div>
+    </div>
+
+    <!-- RSVP Section -->
+    <section
+id="rsvp"
+class="section-bg py-20 md:py-32 px-4"
+style="background-image:url('https://drive.google.com/thumbnail?id=1570Zc5uXQNZxRQcBy_eO6B2z2xzwRZH3&sz=w1600');">
+        <div class="max-w-2xl mx-auto">
+            <div class="text-center mb-12 reveal">
+                <p class="text-gold-600 text-xs tracking-[0.3em] uppercase mb-3">Konfirmasi Kehadiran</p>
+                <h2 class="font-playfair text-3xl md:text-4xl text-ivory-800 mb-4">RSVP</h2>
+                <div class="ornament-line mb-3"></div>
+                <div class="ornament-diamond mb-3"></div>
+                <div class="ornament-line"></div>
+                <p class="text-ivory-600 mt-4 text-sm">Mohon konfirmasi kehadiran Anda untuk membantu kami dalam persiapan acara.</p>
+            </div>
+            <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-6 md:p-8 shadow-sm border border-ivory-200/50 reveal">
+                <form id="rsvpForm" class="space-y-5">
+                    <div>
+                        <label class="block text-ivory-700 text-sm font-medium mb-2">Nama Lengkap</label>
+                        <input type="text" id="rsvpName" required 
+                               class="form-input w-full px-4 py-3 rounded-xl bg-ivory-50 text-ivory-800 text-sm"
+                               placeholder="Masukkan nama lengkap Anda">
+                    </div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-ivory-700 text-sm font-medium mb-2">Jumlah Tamu</label>
+                            <input type="number" id="rsvpGuests" min="1" max="10" required 
+                                   class="form-input w-full px-4 py-3 rounded-xl bg-ivory-50 text-ivory-800 text-sm"
+                                   placeholder="1">
+                        </div>
+                        <div>
+                            <label class="block text-ivory-700 text-sm font-medium mb-2">Konfirmasi</label>
+                            <select id="rsvpStatus" required 
+                                    class="form-input custom-select w-full px-4 py-3 rounded-xl bg-ivory-50 text-ivory-800 text-sm">
+                                <option value="">Pilih...</option>
+                                <option value="hadir">Hadir</option>
+                                <option value="tidak">Tidak Hadir</option>
+                                <option value="belum">Belum Tahu</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-ivory-700 text-sm font-medium mb-2">Pesan (Opsional)</label>
+                        <textarea id="rsvpMessage" rows="3" 
+                                  class="form-input w-full px-4 py-3 rounded-xl bg-ivory-50 text-ivory-800 text-sm resize-none"
+                                  placeholder="Tinggalkan pesan untuk mempelai..."></textarea>
+                    </div>
+                    <button type="submit" 
+                            class="btn-lift w-full bg-gold-500 text-white py-3.5 rounded-xl text-sm font-medium tracking-wider uppercase hover:bg-gold-600 transition-colors">
+                        Kirim Konfirmasi
+                    </button>
+                </form>
+                <div id="rsvpList" class="mt-8 space-y-3 hidden">
+                    <h4 class="font-playfair text-lg text-ivory-800 mb-4">Daftar Kehadiran</h4>
+                    <div id="rsvpItems" class="space-y-3 max-h-64 overflow-y-auto pr-2"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider reveal">
+        <div class="line"></div>
+        <div class="dot"></div>
+        <div class="line"></div>
+    </div>
+
+    <!-- Wedding Gift Section -->
+    <section
+id="gifts"
+class="section-bg py-20 md:py-32 px-4"
+style="background-image:url('https://drive.google.com/thumbnail?id=1P3LrIXZ9sTOsSqFO7gyrdOt1HYtwzHAy&sz=w1600');">
+        <div class="max-w-2xl mx-auto">
+            <div class="text-center mb-12 reveal">
+                <p class="text-gold-600 text-xs tracking-[0.3em] uppercase mb-3">Tanda Kasih</p>
+                <h2 class="font-playfair text-3xl md:text-4xl text-ivory-800 mb-4">Wedding Gift</h2>
+                <div class="ornament-line mb-3"></div>
+                <div class="ornament-diamond mb-3"></div>
+                <div class="ornament-line"></div>
+                <p class="text-ivory-600 mt-4 text-sm">Kehadiran dan doa Anda adalah hadiah terindah. Namun jika ingin memberikan tanda kasih, kami menyediakan informasi rekening berikut.</p>
+            </div>
+            <div class="gift-card rounded-2xl p-6 md:p-8 reveal">
+                <div class="flex items-center justify-center mb-6">
+                    <div class="w-16 h-16 rounded-full bg-gold-100 flex items-center justify-center">
+                        <svg class="w-8 h-8 text-gold-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="text-center space-y-3">
+                    <div class="inline-flex items-center gap-2 bg-sage-50 px-4 py-2 rounded-full">
+                        <span class="text-sage-700 text-sm font-medium">Bank Syariah Indonesia (BSI)</span>
+                    </div>
+                    <div class="bg-white/80 rounded-xl p-4 border border-ivory-200/50">
+                        <p class="text-ivory-500 text-xs uppercase tracking-wider mb-1">Nomor Rekening</p>
+                        <div class="flex items-center justify-center gap-3">
+                            <p id="accountNumber" class="font-playfair text-2xl md:text-3xl text-ivory-800 tracking-wider">7311012295</p>
+                            <button onclick="copyToClipboard('7311012295', this)" 
+                                    class="copy-btn p-2 rounded-lg bg-gold-100 text-gold-600 hover:bg-gold-200 transition-colors"
+                                    title="Salin nomor rekening">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <p class="text-ivory-700 text-sm">a.n. <span class="font-medium text-ivory-800">Nurlena Rasmi</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider reveal">
+        <div class="line"></div>
+        <div class="dot"></div>
+        <div class="line"></div>
+    </div>
+
+    <!-- Wishes Section -->
+    <section
+id="wishes"
+class="section-bg py-20 md:py-32 px-4"
+style="background-image:url('https://drive.google.com/thumbnail?id=1UCIDuqJRaW4NkkbWoD2A44Q2PArlChb_&sz=w1600');">
+        <div class="max-w-3xl mx-auto">
+            <div class="text-center mb-12 reveal">
+                <p class="text-gold-600 text-xs tracking-[0.3em] uppercase mb-3">Ucapan & Doa</p>
+                <h2 class="font-playfair text-3xl md:text-4xl text-ivory-800 mb-4">Pesan untuk Mempelai</h2>
+                <div class="ornament-line mb-3"></div>
+                <div class="ornament-diamond mb-3"></div>
+                <div class="ornament-line"></div>
+            </div>
+            <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-6 md:p-8 shadow-sm border border-ivory-200/50 mb-8 reveal">
+                <div class="text-center mb-6">
+                    <svg class="w-10 h-10 text-gold-400 mx-auto mb-3" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                    </svg>
+                    <p class="text-ivory-700 text-sm leading-relaxed italic">
+                        "Terima kasih telah menjadi bagian dari hari bahagia kami. Kehadiran, doa, dan ucapan terbaik dari Anda akan menjadi kenangan yang sangat berarti bagi kami. Silakan tinggalkan pesan dan doa Anda di bawah ini."
+                    </p>
+                </div>
+                <form id="wishForm" class="space-y-4">
+                    <div>
+                        <label class="block text-ivory-700 text-sm font-medium mb-2">Nama</label>
+                        <input type="text" id="wishName" required 
+                               class="form-input w-full px-4 py-3 rounded-xl bg-ivory-50 text-ivory-800 text-sm"
+                               placeholder="Nama Anda">
+                    </div>
+                    <div>
+                        <label class="block text-ivory-700 text-sm font-medium mb-2">Ucapan & Doa</label>
+                        <textarea id="wishText" rows="4" required 
+                                  class="form-input w-full px-4 py-3 rounded-xl bg-ivory-50 text-ivory-800 text-sm resize-none"
+                                  placeholder="Tulis ucapan dan doa untuk mempelai..."></textarea>
+                    </div>
+                    <button type="submit" 
+                            class="btn-lift w-full bg-gold-500 text-white py-3.5 rounded-xl text-sm font-medium tracking-wider uppercase hover:bg-gold-600 transition-colors">
+                        Kirim Ucapan
+                    </button>
+                </form>
+            </div>
+            <div id="wishesList" class="space-y-4">
+                <div class="message-card bg-white/60 backdrop-blur-sm rounded-xl p-5 border border-ivory-200/30 reveal">
+                    <div class="flex items-start gap-3">
+                        <div class="w-10 h-10 rounded-full bg-gold-100 flex items-center justify-center flex-shrink-0">
+                            <span class="text-gold-600 text-sm font-medium">K</span>
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex items-center gap-2 mb-1">
+                                <h4 class="font-medium text-ivory-800 text-sm">Keluarga Besar</h4>
+                                <span class="text-ivory-400 text-xs">2 hari yang lalu</span>
+                            </div>
+                            <p class="text-ivory-600 text-sm leading-relaxed">Selamat menempuh hidup baru Ridho dan Nurlena! Semoga pernikahan kalian menjadi ladang amal, penuh berkah, dan selalu dalam lindungan Allah SWT. Barakallahu laka wa baraka alaikuma wa jama'a bainakuma fi khair.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-2 px-4 bg-ivory-100/50">
+        <div class="max-w-2xl mx-auto text-center">
+            <div class="mb-6">
+                <div class="ornament-line mb-3"></div>
+                <div class="ornament-diamond mb-3"></div>
+                <div class="ornament-line"></div>
+            </div>
+            <h2 class="font-playfair text-2xl md:text-3xl text-ivory-800 mb-2">Ridho & Lena</h2>
+            <p class="font-script text-xl text-gold-600 mb-6">25 Juli 2026</p>
+            <p class="text-ivory-600 text-sm mb-8">Terima kasih atas doa dan restu Anda. Semoga Allah SWT senantiasa memberkahi pernikahan kami.</p>
+            <div class="flex items-center justify-center gap-4 text-ivory-400 text-xs">
+                <span>Dibuat dengan</span>
+                <svg class="w-4 h-4 text-red-400" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                </svg>
+                <span>oleh Ridho & Lena</span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // ====== DATA ======
+        const galleryImages = [
+            'https://lh3.googleusercontent.com/d/1sS8hdAORQs7y7PsaNOHfxKrArj9vd84L',
+            'https://lh3.googleusercontent.com/d/1RBMmRx7W6OuoIKZFiMfgYUaeK-EIjlQk',
+            'https://lh3.googleusercontent.com/d/1w9vHIxagmldwZamhDMPiAjL2TmNQIq59',
+            'https://lh3.googleusercontent.com/d/1uvQBEBOTsqJSDpWjDVsUwFQfJKP74dnZ',
+            'https://lh3.googleusercontent.com/d/1yMmMtIQQn5hYULiQU0Wuc6eweqVd-8LA',
+            'https://lh3.googleusercontent.com/d/10YYa2j4iCfNNHEJpsDKBOJFAAImRQ6_5'
+        ];
+
+        let currentLightboxIndex = 0;
+        let musicPlaying = false;
+        let rsvpData = JSON.parse(localStorage.getItem('rsvpData') || '[]');
+        let wishesData = JSON.parse(localStorage.getItem('wishesData') || '[]');
+
+        // ====== OPENING OVERLAY ======
+        const openingOverlay = document.getElementById('openingOverlay');
+        const openBtn = document.getElementById('openBtn');
+        const bgMusic = document.getElementById('bgMusic');
+        const musicBtn = document.getElementById('musicBtn');
+        const musicIcon = document.getElementById('musicIcon');
+        const mainNav = document.getElementById('mainNav');
+
+        // Parse guest name from URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const guestName = urlParams.get('to') || 'Tamu Undangan';
+        document.getElementById('guestNameDisplay').textContent = guestName;
+
+        openBtn.addEventListener('click', () => {
+
+    openingOverlay.classList.add('fade-out');
+
+    document.body.style.overflow = 'auto';
+
+    // Putar musik
+    bgMusic.volume = 0.5;
+
+    bgMusic.play().then(() => {
+        musicPlaying = true;
+        musicBtn.classList.add('playing');
+        updateMusicIcon();
+    }).catch(() => {});
+
+    // Navbar muncul
+    setTimeout(() => {
+        mainNav.classList.remove('opacity-0', '-translate-y-full');
+    }, 800);
+
+    // Setelah overlay memudar
+    setTimeout(() => {
+        openingOverlay.style.display = 'none';
+
+        // Hero mulai zoom
+        document.getElementById('hero').classList.add('zoom-in');
+
+    }, 800);
+
+});
+        // ====== MUSIC ======
+        function updateMusicIcon() {
+            if (musicPlaying) {
+                musicIcon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"/>';
+            } else {
+                musicIcon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2"/>';
+            }
+        }
+
+        musicBtn.addEventListener('click', () => {
+            if (musicPlaying) {
+                bgMusic.pause();
+                musicPlaying = false;
+                musicBtn.classList.remove('playing');
+            } else {
+                bgMusic.play();
+                musicPlaying = true;
+                musicBtn.classList.add('playing');
+            }
+            updateMusicIcon();
+        });
+
+        // ====== MOBILE MENU ======
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        document.querySelectorAll('#mobileMenu a').forEach(link => {
+            link.addEventListener('click', () => mobileMenu.classList.add('hidden'));
+        });
+
+        // ====== PARTICLES ======
+        function createParticles() {
+            const container = document.getElementById('particles');
+            for (let i = 0; i < 15; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                const size = Math.random() * 6 + 2;
+                particle.style.width = size + 'px';
+                particle.style.height = size + 'px';
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.animationDuration = (Math.random() * 10 + 10) + 's';
+                particle.style.animationDelay = (Math.random() * 10) + 's';
+                container.appendChild(particle);
+            }
+        }
+        createParticles();
+
+        // ====== INTERSECTION OBSERVER ======
+        const observerOptions = {
+            threshold: 0.15,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale').forEach(el => {
+            observer.observe(el);
+        });
+
+        // ====== NAV ACTIVE STATE ======
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (scrollY >= sectionTop - 200) {
+                    current = section.getAttribute('id');
+                }
+            });
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // ====== COUNTDOWN ======
+        const weddingDate = new Date('2026-07-25T09:00:00+08:00').getTime();
+
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const distance = weddingDate - now;
+
+            if (distance < 0) {
+                document.getElementById('days').textContent = '00';
+                document.getElementById('hours').textContent = '00';
+                document.getElementById('minutes').textContent = '00';
+                document.getElementById('seconds').textContent = '00';
+                return;
+            }
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById('days').textContent = String(days).padStart(2, '0');
+            document.getElementById('hours').textContent = String(hours).padStart(2, '0');
+            document.getElementById('minutes').textContent = String(minutes).padStart(2, '0');
+            document.getElementById('seconds').textContent = String(seconds).padStart(2, '0');
+        }
+        updateCountdown();
+        setInterval(updateCountdown, 1000);
+
+        // ====== LIGHTBOX ======
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightboxImg');
+
+        function openLightbox(index) {
+            currentLightboxIndex = index;
+            lightboxImg.src = galleryImages[index];
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox(event) {
+            if (event.target === lightbox || event.target.tagName === 'BUTTON') {
+                lightbox.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+        }
+
+        function nextImage(event) {
+            event.stopPropagation();
+            currentLightboxIndex = (currentLightboxIndex + 1) % galleryImages.length;
+            lightboxImg.src = galleryImages[currentLightboxIndex];
+        }
+
+        function prevImage(event) {
+            event.stopPropagation();
+            currentLightboxIndex = (currentLightboxIndex - 1 + galleryImages.length) % galleryImages.length;
+            lightboxImg.src = galleryImages[currentLightboxIndex];
+        }
+
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (!lightbox.classList.contains('active')) return;
+            if (e.key === 'Escape') {
+                lightbox.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+            if (e.key === 'ArrowRight') nextImage({ stopPropagation: () => {} });
+            if (e.key === 'ArrowLeft') prevImage({ stopPropagation: () => {} });
+        });
+
+        // ====== COPY TO CLIPBOARD ======
+        function copyToClipboard(text, btn) {
+            navigator.clipboard.writeText(text).then(() => {
+                const originalHTML = btn.innerHTML;
+                btn.innerHTML = '<svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>';
+                btn.classList.add('bg-sage-100', 'text-sage-600');
+                btn.classList.remove('bg-gold-100', 'text-gold-600');
+                setTimeout(() => {
+                    btn.innerHTML = originalHTML;
+                    btn.classList.remove('bg-sage-100', 'text-sage-600');
+                    btn.classList.add('bg-gold-100', 'text-gold-600');
+                }, 2000);
+            });
+        }
+
+        // ====== RSVP FORM ======
+        const rsvpForm = document.getElementById('rsvpForm');
+        const rsvpList = document.getElementById('rsvpList');
+        const rsvpItems = document.getElementById('rsvpItems');
+
+        function renderRSVP() {
+            if (rsvpData.length === 0) {
+                rsvpList.classList.add('hidden');
+                return;
+            }
+            rsvpList.classList.remove('hidden');
+            rsvpItems.innerHTML = rsvpData.map((item, i) => {
+                const badgeClass = item.status === 'hadir' ? 'badge-hadir' : 
+                                   item.status === 'tidak' ? 'badge-tidak' : 'badge-belum';
+                const statusText = item.status === 'hadir' ? 'Hadir' : 
+                                   item.status === 'tidak' ? 'Tidak Hadir' : 'Belum Tahu';
+                return `
+                    <div class="message-card bg-white/60 rounded-xl p-4 border border-ivory-200/30">
+                        <div class="flex items-start justify-between gap-3">
+                            <div class="flex-1">
+                                <div class="flex items-center gap-2 mb-1">
+                                    <h4 class="font-medium text-ivory-800 text-sm">${item.name}</h4>
+                                    <span class="${badgeClass} text-xs px-2 py-0.5 rounded-full">${statusText}</span>
+                                </div>
+                                <p class="text-ivory-500 text-xs">${item.guests} tamu</p>
+                                ${item.message ? `<p class="text-ivory-600 text-sm mt-2">${item.message}</p>` : ''}
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        rsvpForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    const name = document.getElementById('rsvpName').value;
+    const guests = document.getElementById('rsvpGuests').value;
+    const status = document.getElementById('rsvpStatus').value;
+    const message = document.getElementById('rsvpMessage').value;
+
+    const btn = rsvpForm.querySelector('button[type="submit"]');
+    const originalText = btn.textContent;
+
+    btn.disabled = true;
+    btn.textContent = 'Mengirim...';
+
+    try {
+       const response = await fetch(
+'https://script.google.com/macros/s/AKfycbz4uHEvNFgmTa0auSttUG0Cx_8Wd-EU_10MgZlCvyAsAdwB_MMqiziiuLIyOWxRh7-j/exec',
+{
+                method: 'POST',
+                body: JSON.stringify({
+                    name,
+                    guests,
+                    status,
+                    message
+                })
+            }
+        );
+
+        const result = await response.json();
+
+        if (result.result === 'success') {
+
+    wishesData.unshift({
+        name: name,
+        text: text
+    });
+
+    localStorage.setItem(
+        'wishesData',
+        JSON.stringify(wishesData)
+    );
+
+    renderWishes();
+
+    alert('Ucapan berhasil dikirim!');
+    wishForm.reset();
+
+} else {
+    alert('Gagal mengirim ucapan');
+}
+
+    } catch (error) {
+        console.error(error);
+        alert('Terjadi kesalahan saat mengirim data');
+    }
+
+    btn.disabled = false;
+    btn.textContent = originalText;
+});
+
+        renderRSVP();
+
+        // ====== WISHES FORM ======
+        const wishForm = document.getElementById('wishForm');
+        const wishesList = document.getElementById('wishesList');
+
+        async function renderWishes() {
+
+    wishesList.innerHTML = '';
+
+    try {
+
+        const response = await fetch(
+'https://script.google.com/macros/s/AKfycbwyR8FB0mBH3RRXSgAJwCdG6KapVSHEKN8ScWT2orlUYGs2yAY2NKGeGgfmRB2kJKg/exec'
+);
+
+        const wishes = await response.json();
+
+        wishes.reverse().forEach(wish => {
+
+            const initial = wish.name.charAt(0).toUpperCase();
+
+            const card = document.createElement('div');
+
+            card.className =
+                'message-card bg-white/60 backdrop-blur-sm rounded-xl p-5 border border-ivory-200/30 reveal active';
+
+            card.innerHTML = `
+                <div class="flex items-start gap-3">
+                    <div class="w-10 h-10 rounded-full bg-gold-100 flex items-center justify-center flex-shrink-0">
+                        <span class="text-gold-600 text-sm font-medium">${initial}</span>
+                    </div>
+
+                    <div class="flex-1">
+                        <div class="flex items-center gap-2 mb-1">
+                            <h4 class="font-medium text-ivory-800 text-sm">${wish.name}</h4>
+                            <span class="text-ivory-400 text-xs">Baru saja</span>
+                        </div>
+
+                        <p class="text-ivory-600 text-sm leading-relaxed">
+                            ${wish.text}
+                        </p>
+                    </div>
+                </div>
+            `;
+
+            wishesList.appendChild(card);
+
+        });
+
+    } catch (error) {
+
+        console.error(error);
+
+    }
+
+}
+        wishForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    const name = document.getElementById('wishName').value;
+    const text = document.getElementById('wishText').value;
+
+    try {
+        const response = await fetch(
+            'https://script.google.com/macros/s/AKfycbz4uHEvNFgmTa0auSttUG0Cx_8Wd-EU_10MgZlCvyAsAdwB_MMqiziiuLIyOWxRh7-j/exec',
+            {
+                method: 'POST',
+                body: JSON.stringify({
+                    type: 'wish',
+                    name: name,
+                    message: text
+                })
+            }
+        );
+
+        const result = await response.json();
+
+        if (result.result === 'success') {
+    alert('Ucapan berhasil dikirim!');
+    wishForm.reset();
+
+    await renderWishes();
+
+} else {
+    alert('Gagal mengirim ucapan');
+}
+
+    } catch (error) {
+        console.error(error);
+        alert('Terjadi kesalahan saat mengirim ucapan');
+    }
+});
+
+        renderWishes();
+
+// ====== SMOOTH SCROLL ======
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            target.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    });
+});
+
+// ====== PARALLAX EFFECT ======
+window.addEventListener('scroll', () => {
+    const scrolled = window.pageYOffset;
+    const hero = document.getElementById('hero');
+    const heroBg = hero.querySelector('.hero-parallax');
+
+    if (heroBg) {
+        heroBg.style.transform = `translateY(${scrolled * 0.3}px)`;
+    }
+});
+    </script>
+</body>
+</html>
