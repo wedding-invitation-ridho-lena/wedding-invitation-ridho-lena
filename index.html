@@ -326,13 +326,20 @@
             background: linear-gradient(135deg, #FFF8E7 0%, #FFFBF0 100%);
             border: 1px solid rgba(196, 162, 101, 0.3);
         }
-        .section-divider {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 16px;
-            padding: 40px 0;
-        }
+        .section-divider{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:16px;
+
+    padding-top:70px;
+    padding-bottom:20px;
+
+    position:relative;
+    z-index:10;
+
+    background:transparent;
+}
         .section-divider .line {
             width: 60px;
             height: 1px;
@@ -403,7 +410,7 @@
     </style>
 <base target="_blank">
 </head>
-<body class="bg-ivory-50 font-inter text-ivory-900 antialiased overflow-x-hidden">
+<body class="bg-transparent font-inter text-ivory-900 antialiased overflow-x-hidden">
 
     <!-- Opening Overlay -->
     <div id="openingOverlay" class="opening-overlay">
@@ -491,7 +498,7 @@ class="relative min-h-screen flex items-center justify-center overflow-hidden">
     <div id="particles" class="absolute inset-0 pointer-events-none overflow-hidden"></div>
 
     <!-- Hero Content -->
-    <div class="relative z-10 text-center px-6 max-w-3xl mx-auto">
+    <div class="relative z-10 text-center px-6 max-w-md mt-52 md:mt-56">
 
         <div class="mb-6 animate-fade">
             <div class="ornament-line mb-3 bg-white/50"></div>
@@ -512,13 +519,6 @@ class="relative min-h-screen flex items-center justify-center overflow-hidden">
         <p class="font-script text-2xl md:text-3xl text-gold-300 mb-8 animate-fade delay-500">
             26 Juli 2026
         </p>
-
-        <div class="flex items-center justify-center gap-4 text-white/70 text-sm animate-fade delay-600">
-            <span>Minggu</span>
-            <span class="w-1 h-1 bg-gold-400 rounded-full"></span>
-            <span>26 Juli 2026</span>
-        </div>
-
     </div>
 
     <!-- Scroll Down -->
@@ -568,7 +568,6 @@ style="background-image:url('https://drive.google.com/thumbnail?id=1O28ajCAD1PLw
         acara pernikahan
     </p>
 </div>
-                <p class="text-gold-500 text-xs tracking-[0.3em] uppercase mb-3">Mempelai</p>
                 <h2 class="font-playfair text-3xl md:text-4xl text-ivory-800 mb-4">Kedua Mempelai</h2>
                 <div class="ornament-line mb-3"></div>
                 <div class="ornament-diamond mb-3"></div>
@@ -601,7 +600,6 @@ style="background-image:url('https://drive.google.com/thumbnail?id=1O28ajCAD1PLw
                 <div class="flex items-center justify-center reveal-scale">
                     <div class="text-center">
                         <div class="font-script text-5xl text-gold-500 mb-2">&</div>
-                        <div class="w-px h-20 bg-gradient-to-b from-gold-300 to-transparent mx-auto"></div>
                     </div>
                 </div>
                 <div class="text-center reveal-right">
@@ -629,13 +627,12 @@ style="background-image:url('https://drive.google.com/thumbnail?id=1O28ajCAD1PLw
                 </div>
             </div>
         </div>
-    </section>
-
-    <div class="section-divider reveal">
+        <div class="section-divider reveal">
         <div class="line"></div>
         <div class="dot"></div>
         <div class="line"></div>
     </div>
+    </section>
 
     <!-- Story Section -->
     <section
@@ -643,8 +640,7 @@ id="story"
 class="section-bg"
 style="background-image:url('https://drive.google.com/thumbnail?id=1XVkCnupl49Ie4xDDuRnllzbvZ_b-qHYO&sz=w1600');">
         <div class="max-w-4xl mx-auto">
-            <div class="text-center mb-16 reveal">
-                <p class="text-gold-600 text-xs tracking-[0.3em] uppercase mb-3">Perjalanan Cinta</p>
+            <div class="text-center pt-16 mb-16 reveal">
                 <h2 class="font-playfair text-3xl md:text-4xl text-ivory-800 mb-4">Cerita Kami</h2>
                 <div class="ornament-line mb-3"></div>
                 <div class="ornament-diamond mb-3"></div>
@@ -681,13 +677,13 @@ style="background-image:url('https://drive.google.com/thumbnail?id=1XVkCnupl49Ie
                 </div>
             </div>
         </div>
-    </section>
-
-    <div class="section-divider reveal">
+            <div class="section-divider reveal">
         <div class="line"></div>
         <div class="dot"></div>
         <div class="line"></div>
     </div>
+    </section>
+
 
     <!-- Video Section -->
    <section
@@ -716,13 +712,13 @@ style="background-image:url('https://drive.google.com/thumbnail?id=1P3LrIXZ9sTOs
 </div>
             </div>
         </div>
-    </section>
-
-    <div class="section-divider reveal">
+            <div class="section-divider reveal">
         <div class="line"></div>
         <div class="dot"></div>
         <div class="line"></div>
     </div>
+    </section>
+
 
     <!-- Countdown Section -->
     <section
@@ -763,13 +759,13 @@ style="background-image:url('https://drive.google.com/thumbnail?id=1570Zc5uXQNZx
                 <p class="font-playfair text-xl md:text-2xl text-ivory-800">Minggu, 26 Juli 2026</p>
             </div>
         </div>
-    </section>
-
-    <div class="section-divider reveal">
+            <div class="section-divider reveal">
         <div class="line"></div>
         <div class="dot"></div>
         <div class="line"></div>
     </div>
+
+    </section>
 
     <!-- Event Details Section -->
     <section
@@ -778,12 +774,14 @@ class="section-bg"
 style="background-image:url('https://drive.google.com/thumbnail?id=1td-RcTpJZOtyTvEedzds5q0djr98ZO0A&sz=w1600');">
         <div class="max-w-5xl mx-auto">
             <div class="text-center mb-16 reveal">
-                <p class="text-gold-600 text-xs tracking-[0.3em] uppercase mb-3">Detail Acara</p>
-                <h2 class="font-playfair text-3xl md:text-4xl text-ivory-800 mb-4">Rangkaian Acara</h2>
-                <div class="ornament-line mb-3"></div>
-                <div class="ornament-diamond mb-3"></div>
-                <div class="ornament-line"></div>
-            </div>
+    <div class="pt-16">
+        <p class="text-gold-600 text-xs tracking-[0.3em] uppercase mb-3">Rangkaian Acara</p>
+        <h2 class="font-playfair text-3xl md:text-4xl text-ivory-800 mb-4">Rangkaian Acara</h2>
+        <div class="ornament-line mb-3"></div>
+        <div class="ornament-diamond mb-3"></div>
+        <div class="ornament-line"></div>
+    </div>
+</div>
             <div class="grid md:grid-cols-2 gap-8 md:gap-12">
                 <div class="reveal-left">
                     <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-6 md:p-8 shadow-sm border border-ivory-200/50 h-full">
@@ -867,31 +865,37 @@ style="background-image:url('https://drive.google.com/thumbnail?id=1td-RcTpJZOty
                                     <p class="text-ivory-600 text-sm">Kel. Empoang Selatan Kab. Jeneponto, Sulawesi Selatan</p>
                                 </div>
                             </div>
-                        </div>
                         <div class="map-wrapper mb-4">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3973.7!2d120.0419!3d-5.4582!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNcKwMjcnMjkuNSJTIDEyMMKwMDInMzEuMCJF!5e0!3m2!1sid!2sid!4v1600000000000!5m2!1sid!2sid" 
-                                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                            </iframe>
-                        </div>
-                        <a href="https://www.google.com/maps/search/?api=1&query=-5.6708,119.7729" 
-                           target="_blank" 
-                           class="btn-lift inline-flex items-center gap-2 bg-gold-500 text-white px-6 py-2.5 rounded-full text-sm font-medium hover:bg-gold-600 transition-colors w-full justify-center">
-                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
-                            </svg>
-                            Buka di Google Maps
-                        </a>
+    <iframe
+        src="https://www.google.com/maps?q=-5.6708,119.7729&z=18&output=embed"
+        width="100%"
+        height="300"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+</div>
+                        <a href="https://www.google.com/maps/place/5%C2%B040'14.9%22S+119%C2%B046'22.4%22E/@-5.6713445,119.7713336,17z/data=!4m4!3m3!8m2!3d-5.6708!4d119.7729?entry=ttu&g_ep=EgoyMDI2MDcwOC4wIKXMDSoASAFQAw%3D%3D"
+   target="_blank"
+   class="btn-lift inline-flex items-center gap-2 bg-gold-500 text-white px-6 py-2.5 rounded-full text-sm font-medium hover:bg-gold-600 transition-colors w-full justify-center">
+    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+    </svg>
+    Buka di Google Maps
+</a>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-
-    <div class="section-divider reveal">
+         <div class="section-divider reveal">
         <div class="line"></div>
         <div class="dot"></div>
         <div class="line"></div>
     </div>
+
+    </section>
 
     <!-- Gallery Section -->
     <section
@@ -973,8 +977,13 @@ style="background-image:url('https://drive.google.com/thumbnail?id=1P3LrIXZ9sTOs
                         </svg>
                     </div>
                 </div>
-            </div>
-        </div>
+           </div>
+        <div class="section-divider reveal">
+        <div class="line"></div>
+        <div class="dot"></div>
+        <div class="line"></div>
+    </div>
+
     </section>
 
     <!-- Lightbox -->
@@ -995,13 +1004,7 @@ style="background-image:url('https://drive.google.com/thumbnail?id=1P3LrIXZ9sTOs
             </svg>
         </button>
         <img id="lightboxImg" src="" alt="Gallery Preview">
-    </div>
-
-    <div class="section-divider reveal">
-        <div class="line"></div>
-        <div class="dot"></div>
-        <div class="line"></div>
-    </div>
+        </div>
 
     <!-- RSVP Section -->
     <section
@@ -1017,7 +1020,7 @@ style="background-image:url('https://drive.google.com/thumbnail?id=1570Zc5uXQNZx
                 <div class="ornament-line"></div>
                 <p class="text-ivory-600 mt-4 text-sm">Mohon konfirmasi kehadiran Anda untuk membantu kami dalam persiapan acara.</p>
             </div>
-            <div class="bg-white/80 backdrop-blur-sm rounded-2xl p-6 md:p-8 shadow-sm border border-ivory-200/50 reveal">
+            <div class="rounded-2xl p-6 md:p-8 reveal">
                 <form id="rsvpForm" class="space-y-5">
                     <div>
                         <label class="block text-ivory-700 text-sm font-medium mb-2">Nama Lengkap</label>
@@ -1055,18 +1058,25 @@ style="background-image:url('https://drive.google.com/thumbnail?id=1570Zc5uXQNZx
                     </button>
                 </form>
                 <div id="rsvpList" class="mt-8 space-y-3 hidden">
-                    <h4 class="font-playfair text-lg text-ivory-800 mb-4">Daftar Kehadiran</h4>
-                    <div id="rsvpItems" class="space-y-3 max-h-64 overflow-y-auto pr-2"></div>
+                    <h4 class="font-playfair text-lg text-ivory-800 mb-4">
+                        Daftar Kehadiran
+                    </h4>
+
+                    <div id="rsvpItems"
+                        class="space-y-3 max-h-64 overflow-y-auto pr-2">
+                    </div>
+
                 </div>
             </div>
         </div>
-    </section>
 
-    <div class="section-divider reveal">
-        <div class="line"></div>
-        <div class="dot"></div>
-        <div class="line"></div>
-    </div>
+        <div class="section-divider reveal">
+            <div class="line"></div>
+            <div class="dot"></div>
+            <div class="line"></div>
+        </div>
+
+    </section>
 
     <!-- Wedding Gift Section -->
     <section
@@ -1108,16 +1118,16 @@ style="background-image:url('https://drive.google.com/thumbnail?id=1P3LrIXZ9sTOs
                         </div>
                     </div>
                     <p class="text-ivory-700 text-sm">a.n. <span class="font-medium text-ivory-800">Nurlena Rasmi</span></p>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
-
-    <div class="section-divider reveal">
+        <div class="section-divider reveal">
         <div class="line"></div>
         <div class="dot"></div>
         <div class="line"></div>
     </div>
+    </section>
 
     <!-- Wishes Section -->
     <section
